@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
-import { Message } from "./entity/Message";
+import { Portfolio } from "./entity/Message";
 import * as dotenv from "dotenv";
 dotenv.config();
 
@@ -18,7 +18,7 @@ export const AppDataSource = new DataSource({
   password: password,
   database: name,
   synchronize: true,
-  entities: [Message],
+  entities: [Portfolio],
 });
 
 export const connect = async () => {

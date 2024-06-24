@@ -1,13 +1,13 @@
 import { AppDataSource } from "../data-source";
-import { Message } from "../entity/Message";
-const msgRepository = AppDataSource.getRepository(Message);
+import { Portfolio } from "../entity/Message";
+const msgRepository = AppDataSource.getRepository(Portfolio);
 
 export const registerMessage = async (
   fullName: string,
   email: string,
   message: string
 ) => {
-  const msg = new Message();
+  const msg = new Portfolio();
   msg.fullName = fullName;
   msg.email = email;
   msg.message = message;
