@@ -29,4 +29,4 @@ export const connect = async () => {
     console.error(error);
     throw new Error("Connection to the database failed");
   }
-};
+};  
