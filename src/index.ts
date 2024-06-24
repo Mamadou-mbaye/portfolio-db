@@ -9,7 +9,7 @@ const app: Application = express();
 const port: number = parseInt(process.env.SERVER_PORT);
 
 const corsOptions = {
-  origin: "http://localhost:3000", // Allow only this origin
+  origin: "https://modu-portfolio.netlify.app/",//"http://localhost:3000",  Allow only this origin
   methods: ["POST"], // Allow only POST method
 };
 app.use(cors(corsOptions));
