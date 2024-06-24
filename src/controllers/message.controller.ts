@@ -18,3 +18,7 @@ export const registerMessageController = async (
     res.send("An error occurred");
   }
 };
+
+export const sendMessage = (req:Request, res:Response)=>{
+  res.send({message:"Portfolio"})
+}

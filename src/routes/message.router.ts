@@ -1,5 +1,9 @@
 import { Router } from "express";
-import { registerMessageController } from "../controllers/message.controller";
+import {
+  registerMessageController,
+  sendMessage,
+} from "../controllers/message.controller";
 const router = Router();
 router.post("/message/register", registerMessageController);
+router.get("/", sendMessage);
 export { router };
